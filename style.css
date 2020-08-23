@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: #CBC3BE;
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* */
+
+header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 20px;
+
+
+    background: #B32113;
+
+    color: #FFF;
+}
+
+
+/* CORPORATE INFORMATION */
+
+.corporate-information {
+    flex: 1;
+}
+
+/* NAVBAR */
+
+.navbar {
+    flex: 1;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li a {
+
+    color: #FFF;
+    text-decoration: none;
+}
+
+/** SECTION A **/
+
+.section-a {
+    position: relative;
+
+    height: 350px;
+
+    background: #FFF;
+
+}
+
+.overlay {
+    position: absolute;
+    bottom: 20%;
+
+    width: 100%;
+    height: 100px;
+
+    background: red;
+}
+
+.big {
+    font-size: 40px;
+    color: #FFF;
+}
+
+.cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/** SECTION B **/
+
+.section-b {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 40px;
+
+    height: 350px;
+
+    /* background: #A6A6AB; */
+    background: #FFF;
+}
+
+.placeholder {
+    width: 15%;
+    height: 50%;
+
+    background: #FFF;
+
+    object-fit: contain;
+}
+
+/** SECTION C **/
+
+
+
+/** FOOTER **/
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+
+    height: 350px;
+
+    background: #B32113;
+    color: #FFF;
+}
+
+.left, .center, .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.aside {
+    display: flex;
+    align-items: flex-start;
+}
+
+.aside img {
+    /* padding: 10px; */
+    padding: 10px 10px 0 0;
+}
