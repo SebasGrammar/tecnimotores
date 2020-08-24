@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+:root {
+    --general-padding: 40px;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -6,13 +10,14 @@
 }
 
 body {
-    background: #CBC3BE;
+    /* background: #CBC3BE; */
     font-family: 'Open Sans', sans-serif;
 }
 
 /* */
 
 header {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,28 +28,63 @@ header {
     /* color: #EE0000; */
     color: #31145c;
     border-bottom: 1px solid gray;
+    /* background-image: url(./images/pictures/metal.jpg); */
+}
+
+.background {
+    position: absolute;
+    left: 0;
+    opacity: 0.3;
+    /* background-image: url(./images/pictures/brushed-metal.jpg); */
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.logo {
+    width: 200px;
+    height: 100%;
 }
 
 /* WELCOME */
 
 .welcome {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
-    background: orange;
+    /* background: orange; */
+    padding: var(--general-padding);
+}
+
+.transparent {
+    width: 300px;
+}
+
+.top {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    opacity: 0.1;
 }
 
 /* CORPORATE INFORMATION */
 
 .corporate-information {
-    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex: 1; */
+    /* background: orange; */
 }
 
 /* NAVBAR */
 
 .navbar {
-    flex: 1;
+    /* flex: 1; */
+    width: 50%;
 }
 
 .navbar ul {
@@ -78,16 +118,18 @@ header {
     /* height: 350px; */
     /* background: #FFF; */
     /* background: lightblue; */
-
     text-align: center;
 }
 
 .service {
     display: flex;
+    align-items: center;
     text-align: center;
     padding: 0 70px;
+}
 
-    
+.service:nth-child(odd) {
+    background: red;
 }
 
 .service:nth-child(even) {
@@ -98,7 +140,6 @@ header {
 
 .service img {
     width: 350px
-    
 }
 
 .context {
@@ -178,7 +219,7 @@ footer {
 }
 
 .center {
-    display: none;
+    /* display: none; */
 }
 
 .contact-us {
@@ -194,4 +235,143 @@ footer {
 .aside img {
     /* padding: 10px; */
     padding: 5px 10px 0 0;
+}
+
+/*************/
+
+#slider {
+    position: relative;
+    height: 300px;
+    padding: 0;
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.slide {
+    /* we position the slide absolutely compared to its parent #slider */
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+    /* change the value for a faster or slower transition between slides */
+    -webkit-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+
+/* class to show the current slide */
+.showing {
+    opacity: 1;
+    z-index: 2;
+}
+
+.slide-text {
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+    padding: 40px;
+    padding-left: 60px;
+    position: relative;
+}
+
+/* create the notch */
+.slide-text:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -20px;
+    left: calc(50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 26px 0 0;
+    border-color: white transparent transparent transparent;
+}
+
+/* align the testimonial in the center */
+.slide-testimonial {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.slide-img {
+    margin: 10px;
+}
+
+.slide-img img {
+     width: 100px;
+    height: 100px; 
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+.slide-person {
+    margin-left: 20px;
+}
+
+.slide-person p {
+    padding: 5px;
+}
+
+/* make the name of the person bold */
+.slide-person p:first-of-type {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* make their job title light gray */
+.slide-person p:last-of-type {
+    color: var(--color-light-gray);
+}
+
+/* position the buttons and make them green */
+.slider-button {
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-highlight-green);
+    z-index: 3;
+    position: absolute;
+    text-align: center;
+    border-radius: 20%;
+    -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+/*posion the left an right button horizontally */
+.button-left {
+    position: absolute;
+    left: -10px;
+}
+
+.button-right {
+    position: absolute;
+    right: -10px;
 }
