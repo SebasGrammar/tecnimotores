@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
 :root {
-    --general-padding: 40px;
+    --general-padding: 60px;
 }
 
 * {
@@ -12,6 +14,7 @@
 body {
     /* background: #CBC3BE; */
     font-family: 'Open Sans', sans-serif;
+    
 }
 
 /* */
@@ -50,16 +53,59 @@ header {
 
 .welcome {
     position: relative;
+
+    text-align: center;
+}
+
+.welcome-information {
+    
+}
+
+.welcome-information {
+    
     display: flex;
     justify-content: center;
+    
     align-items: center;
+
     height: 100%;
     /* background: orange; */
     padding: var(--general-padding);
 }
 
+.welcome-information > * {
+    margin: 0 60px;
+}
+
+.welcome .text {
+    
+}
+
+.banner {
+    width: 100%;
+    height: 10px;
+
+    margin-bottom: 10px;
+
+    background: #151414;
+}
+
+/* .banner {
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+    height: 15px;
+
+    background: #151414;
+
+    z-index: 3;
+} */
+
 .transparent {
     width: 300px;
+
+    /* margin-left: 200px; */
 }
 
 .top {
@@ -67,7 +113,11 @@ header {
     left: 0;
     top: 0;
     width: 50%;
-    opacity: 0.1;
+    opacity: 0.7;
+
+    object-fit: ;
+
+    z-index: -1;
 }
 
 /* CORPORATE INFORMATION */
@@ -118,7 +168,11 @@ header {
     /* height: 350px; */
     /* background: #FFF; */
     /* background: lightblue; */
+
+    background: #151414;
+
     text-align: center;
+
 }
 
 .service {
@@ -126,10 +180,13 @@ header {
     align-items: center;
     text-align: center;
     padding: 0 70px;
+
+    color: #FFF;
 }
 
 .service:nth-child(odd) {
-    background: red;
+    background: #FFF;
+    color: #151414;;
 }
 
 .service:nth-child(even) {
@@ -193,19 +250,45 @@ header {
 
 /** FOOTER **/
 
-footer {
-    /* display: grid;
-    grid-template-columns: repeat(3, 1fr); */
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 50px;
-    /* height: 350px; */
-    /* background: #EE0000; */
-    background: #FFF;
-    /* color: #FFF; */
-    color: #31145c;
-    border-top: 1px solid gray;
+.footer {
+
+    padding: var(--general-padding);
+
+    background: #151414;
+    color: #FFF;
+
+    
 }
+
+.footer-container {
+    /* display: flex;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    /* padding: var(--general-padding); */
+}
+
+.footer-item {
+    display: flex;
+    align-items: center;
+}
+
+.footer-separator {
+    width: 100%;
+    height: 1px;
+
+    margin: 10px 0;
+
+    background: red;
+}
+
+.footer .logo {
+    width: 200px;
+    height: auto;
+}
+
+/* OLD FOOTER */
 
 .left, .center, .right {
     display: flex;
