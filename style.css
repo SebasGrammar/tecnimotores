@@ -177,8 +177,8 @@ header {
 
 .service {
     display: flex;
-    align-items: center;
-    text-align: center;
+    /* align-items: center;
+    text-align: center; */
     padding: 0 70px;
 
     color: #FFF;
@@ -195,16 +195,31 @@ header {
     flex-direction: row-reverse;
 }
 
+.service h3 {
+    text-align: center;
+}
+
 .service img {
     width: 350px
 }
 
 .context {
     flex: 1;
+
+    text-align: justify;
 }
 
 .picture {
+    
     flex: 1;
+    
+}
+
+.picture img {
+    width: 500px;
+    height: 100%;
+
+    object-fit: cover;
 }
 
 .overlay {
@@ -320,7 +335,7 @@ header {
     padding: 5px 10px 0 0;
 }
 
-/*************/
+/*************/ /**********************/
 
 #slider {
     position: relative;
@@ -458,3 +473,34 @@ header {
     position: absolute;
     right: -10px;
 }
+
+/** PRODUCT CARD **/
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
