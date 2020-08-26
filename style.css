@@ -17,6 +17,29 @@ body {
 
 /* */
 
+
+/* PRE HEADER */
+
+.pre-header {
+    display: flex;
+    
+    align-items: center;
+
+    width: 100%;
+    height: 25px;
+
+    padding: 0 20px;
+
+    background: #CC0F24;
+
+    color: #FFF;
+
+    font-size: 15px;
+}
+
+
+/****************/
+
 header {
     position: relative;
     display: flex;
@@ -27,7 +50,8 @@ header {
     /* background: #EE0000; */
     background: #FFF;
     /* color: #EE0000; */
-    color: #31145c;
+    /* color: #31145c; */
+
     border-bottom: 1px solid gray;
     /* background-image: url(./images/pictures/metal.jpg); */
 }
@@ -52,11 +76,27 @@ header {
 .welcome {
     position: relative;
 
-    height: calc(100vh - 100px);
+    /* height: calc(100vh - 100px); */
 
     text-align: center;
     background: ;
 
+
+}
+
+.quote-with-us {
+    position: absolute;
+    top: 25%;
+    left: 0;
+
+    padding: 10px 20px;
+
+    background: #CC0F24;
+
+    color: #FFF;
+
+    border: none;
+    border-radius: 0 3px 3px 0;
 
 }
 
@@ -172,6 +212,84 @@ header {
     font-size: 15px;
 }
 
+/** PRE SECTION **/
+
+.pre-section {
+    display: flex;
+}
+
+.product {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex: 1;
+    margin-left: 2px;
+    background: ;
+
+}
+
+.product:hover > .product--dim, .product:hover > .product--decor {
+    display: none;
+}
+
+.product:first-child {
+    margin-left: 0;
+}
+
+.pre-section__picture {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+.product--dim {
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: black;
+    opacity: 0.7;
+
+    z-index: 3;
+}
+
+.product--decor {
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 80px;
+    top: 50%;
+    background: ;
+
+    left: 0;
+    top: 0;
+    bottom: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-top: auto;
+    margin-bottom: auto;
+
+    font-size: 23px;
+    font-weight: 800;
+    color: #FFF;
+
+    z-index: 4;
+}
+
+
+
+/*****************/
+
 /** SECTION A **/
 
 .section-a {
@@ -195,6 +313,11 @@ header {
     background: #FFF;
     color: #151414;
     /* color: #FFF; */
+}
+
+.context h3 {
+    margin-bottom: 25px;
+    background: ;
 }
 
 .service:nth-child(odd) {
