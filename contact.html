@@ -1,5 +1,166 @@
-<form action="https://formspree.io/mzbjqkqg" method="POST">
-    <input type="text" name="name">
-    <input type="email" name="_replyto">
-    <input type="submit" value="Send">
-</form>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="pre-header">
+
+        <span>Teléfonos: (+00) 2691317 - (+00) 2736192, (+57) 302 208 3365</span>
+
+    </div>
+
+    <header>
+
+        <div class="corporate-information">
+
+            <a href="./index.html"><img src="./images/pictures/logo.svg" alt="" class="logo"></a>
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">INICIO</a></li>
+                <li><a href="#about-us">SOBRE NOSOTROS</a></li>
+                <li><a href="contact.html">CONTÁCTENOS</a></li>
+            </ul>
+        </nav>
+
+
+    </header>
+
+    <div class="main">
+
+        <div class="main__form">
+
+            <!-- <form action="https://formspree.io/mzbjqkqg" method="POST">
+                <input type="text" name="name">
+                <input type="email" name="_replyto">
+                <input type="submit" value="Send">
+            </form> -->
+
+            <div style="text-align:center">
+                <h2>Contáctenos</h2>
+                <p>Déjenos un mensaje y nos pondremos en contacto con usted en breve.</p>
+            </div>
+
+            <form action="https://formspree.io/mzbjqkqg" method="POST">
+                <label for="fname">Nombre</label>
+                <input type="text" id="fname" name="firstname" placeholder="Ingrese su nombre">
+                <label for="lname">Apellidos</label>
+                <input type="text" id="lname" name="lastname" placeholder="Ingrese sus apellidos">
+                <label for="replyto">Correo electrónico</label>
+                <input type="email" id="replyto" name="_replyto" placeholder="Ingrese su dirección de correo electrónico" required>
+                <label for="phone">Número de teléfono</label>
+                <input type="tel" id="phone" name="_phone" placeholder="Ingrese un número al que le podamos contactar" required>
+                <label for="subject">Comentarios</label>
+                <textarea id="subject" name="subject" placeholder="Inserte su comentario aquí" style="height:170px"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+
+
+        </div>
+
+        <div class="main__get-in-touch">
+
+            <div class="main__get-in-touch--info">
+                <h4>Dirección</h4>
+                <p>
+                    Tecnimotores<br>
+                    Cra 29 # 47 - 86 - Medellín, Colombia.
+                </p>
+
+                <h4>Correo electrónico</h4>
+                <p>
+                    tecnimotores@tecnimotores.com
+                </p>
+
+                <h4>Teléfonos</h4>
+                <p>
+                    (+57) 269 1317
+                    (+57) 301 304 2542
+                </p>
+            </div>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.184084340999!2d-75.55461568590668!3d6.239452328132855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44285d132a80a1%3A0xcc29bfcbe3035af4!2sCra.%2029%20%2347-86%2C%20Medell%C3%ADn%2C%20Antioquia!5e0!3m2!1sen!2sco!4v1598238176048!5m2!1sen!2sco"
+                width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0">
+            </iframe>
+
+
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="item footer-item">
+                <div class="icon">
+                    <img src="./images/icons/location-pin.svg" alt="" style="margin-right: 8px;">
+                </div>
+                <div class="text">
+                    <h4>Visítenos</h4>
+                    <span>Cra 29 # 47 - 86</span>
+                </div>
+            </div>
+
+            <div class="item footer-item">
+                <div class="icon">
+                    <img src="./images/icons/phone.svg" alt="" style="margin-right: 8px;">
+                </div>
+                <div class="text">
+                    <h4>Llámenos</h4>
+                    <!-- <span>2626763</span> -->
+                    <p>2626763 - 2626763</p>
+                </div>
+            </div>
+
+            <div class="item footer-item">
+                <div class="icon">
+                    <img src="./images/icons/envelope-line.svg" alt="" style="margin-right: 13px">
+                </div>
+                <div class="text">
+                    <h4>Escríbanos</h4>
+                    <span>tecnimotores@tecnimotores.com</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-separator"></div>
+
+        <div class="footer-container">
+            <div class="item">
+                <img src="./images/icons/logo.svg" alt="" class="logo">
+
+                <div class="text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
