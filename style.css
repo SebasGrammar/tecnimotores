@@ -45,7 +45,7 @@ header {
     /* color: #31145c; */
     /* border-bottom: 1px solid gray; */
     /* background-image: url(./images/pictures/metal.jpg); */
-    
+    box-shadow: 5px 10px;
 }
 
 .background {
@@ -67,8 +67,11 @@ header {
 
 .welcome {
     position: relative;
-    /* height: calc(100vh - 100px);
-
+    display: flex;
+    height: calc(100vh - 100px);
+    padding: 20px 120px;
+    background: rgb(236, 235, 235);
+    /*
     text-align: center;
     background: ;
 
@@ -76,8 +79,81 @@ header {
     /* background-image: url("./header.png"); */
 }
 
+.temporal {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: auto;
+    height: 100%;
+    padding: 60px;
+    background: #CC0F24;
+    color: #FFF;
+    z-index: 5;
+}
+
+.extra-large {
+    font-size: 3.5rem;
+}
+
+.large {
+    font-size: 2rem;
+}
+
+.holder {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: ;
+    width: 50%;
+    height: 40%;
+}
+
+.collage {
+    display: flex;
+
+    z-index: 4;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: #798897;
+
+
+    opacity: 0.1;
+    overflow: hidden;
+
+
+
+}
+
+.l {
+    top: 0;
+    object-fit: cover;
+}
+
+.transparent-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.temporal-picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 0.9;
+    object-fit: cover;
+}
+
 .welcome__picture {
-    
     width: 100%;
     max-height: 450px;
     object-fit: cover;
@@ -210,6 +286,7 @@ header {
 
 .pre-section {
     display: flex;
+    /* padding: 20px 0; */
 }
 
 .product {
@@ -218,7 +295,7 @@ header {
     justify-content: center;
     align-items: center;
     flex: 1;
-    margin-left: 2px;
+    margin-left: 5px;
     background: ;
 }
 
@@ -284,7 +361,6 @@ header {
 
 .service {
     position: relative;
-
     display: flex;
     /* align-items: center;
     text-align: center; */
@@ -295,7 +371,6 @@ header {
     color: #151414;
     /* color: #FFF; */
     overflow-y: hidden;
-
 }
 
 .context {
@@ -305,7 +380,6 @@ header {
 .context h3 {
     margin-bottom: 25px;
     background: ;
-
     z-index: 5;
 }
 
@@ -345,7 +419,6 @@ header {
 
 .picture {
     flex: 1;
-
     z-index: 5;
 }
 
@@ -378,24 +451,17 @@ header {
 
 .service__cover {
     position: absolute;
-
     top: 0;
     left: 0;
-
     width: 100%;
-    
-
     opacity: 0.1;
-    
     z-index: 1;
 }
 
 .service__test {
     position: absolute;
     right: 0;
-
     height: 100%;
-
     opacity: 0.2;
 }
 
@@ -420,14 +486,10 @@ header {
 
 /** SECTION C **/
 
-
-
 /** BRANDS **/
 
 .brands {
-
     background: #000;
-
     text-align: center;
 }
 
@@ -436,13 +498,10 @@ header {
 }
 
 .brands__row {
-
     display: flex;
     justify-content: space-around;
     align-items: center;
-
     padding: 0 140px;
-
 }
 
 .brands__logo {
@@ -666,7 +725,10 @@ header {
     margin: auto;
     padding: 50px;
     text-align: center;
-    font-family: arial;
+
+
+    background: #FFF;
+    font-family: ;
 }
 
 .price {
@@ -816,18 +878,21 @@ header{
 } */
 
 /********* CONTACT PAGE **********/
+
 /********* CONTACT PAGE **********/
+
 /********* CONTACT PAGE **********/
+
 /********* CONTACT PAGE **********/
+
 /********* CONTACT PAGE **********/
+
 /********* CONTACT PAGE **********/
 
 .main {
     display: flex;
     justify-content: center;
-
     padding: 0 70px;
-
 }
 
 .main__form {
@@ -844,9 +909,7 @@ header{
     justify-content: space-around;
 }
 
-.main__get-in-touch--info {
-
-}
+.main__get-in-touch--info {}
 
 input[type=text], input[type=email], input[type=tel], select, textarea {
     width: 100%;
@@ -855,42 +918,44 @@ input[type=text], input[type=email], input[type=tel], select, textarea {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
-  }
-  
-  input[type=submit] {
+}
+
+input[type=submit] {
     background-color: #4CAF50;
     color: white;
     padding: 12px 20px;
     border: none;
     cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
+}
+
+input[type=submit]:hover {
     background-color: #45a049;
-  }
-  
-  /* Style the container/contact section */
-  .container {
+}
+
+/* Style the container/contact section */
+
+.container {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 10px;
-  }
-  
-  /* Create two columns that float next to eachother */
-  .column {
+}
+
+/* Create two columns that float next to eachother */
+
+.column {
     float: left;
     width: 50%;
     margin-top: 6px;
     padding: 20px;
-  }
-  
-  /* Clear floats after the columns */
+}
 
-  
-  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
+/* Clear floats after the columns */
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
     .column, input[type=submit] {
-      width: 100%;
-      margin-top: 0;
+        width: 100%;
+        margin-top: 0;
     }
-  }
+}
